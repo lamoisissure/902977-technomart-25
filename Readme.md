@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ирина Ким](https://up.htmlacademy.ru/htmlcss/25/user/902977).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Кравченко](https://htmlacademy.ru/profile/dreamoctober).
 
 ---
 
