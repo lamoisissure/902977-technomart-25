@@ -10,30 +10,30 @@
                 <a class="header-logo">
                     <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <!--Здесь будет форма Поиск-->
-                <ul class="user-navigation">
-                    <li class="markers">
-                        <a href="#">Закладки</a>
-                    </li>
-                    <li class="basket">
-                        <a href="#">Корзина</a>
-                    </li>
-                    <li class="order">
-                        <a href="#">Оформить заказ</a>
-                    </li>
-                </ul>
+                <form class="search" action="#" method="post">
+                    <input type="search" name="search" placeholder="Поиск:" aria-label="Поле для поиска">
+                </form>
+                <div class="user-navigation">
+                    <a class="markers" href="#">Закладки</a>
+                    <a class="basket" href="#">Корзина</a>
+                    <a class="order" href="#">Оформить заказ</a>
+                </div>
             </div>
             <div class="header-middle">
-                <p class="site-description">
+                <h1 class="site-description">
                     Интернет-магазин строительных материалов и инструментов для ремонта
-                </p>
+                </h1>
                 <div class="header-contacts">
                     <a class="header-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <ul class="authorization">
-                    <li class="login-link">Войти</li>
-                    <li class="registration">Регистрация</li>
+                    <li class="login-link">
+                        <a href="#">Войти</a>
+                    </li>
+                    <li class="registration">
+                        <a href="#">Регистрация</a>
+                    </li>
                 </ul>
             </div>
             <nav class="header-bottom">
@@ -63,7 +63,6 @@
             </nav>
         </header>
         <main class="container">
-            <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
             <section class="company">
                 <h2 class="company-title">Компания «Техномарт»</h2>
                 <p class="company-intro">
@@ -86,10 +85,10 @@
                     Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                 </p>
-                <a class="map" href="#">
-                    <img src="img/raster/map.png" width="300" height="158" alt="Карта офиса по адресу: улица Большая Конюшенная, дом 19">
-                </a>
-                <a class="button" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите нам!</a>
+                <button class="map" type="button">
+                    <img src="img/raster/map.png" width="300" height="158" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
+                </button>
+                <button class="button" type="button">Заблудились? Напишите нам!</button>
             </section>
         </main>
         <footer class="main-footer">
@@ -143,14 +142,14 @@
                 <div class="social">
                     <ul class="social-list">
                         <li class="social-item">
-                            <a class="social-button" href="#">Вконтакте</a>
-                        </li> <!--скрыть текст-->
+                            <a class="social-button" href="#" aria-label="Сайт ВКонтакте"><!-- иконка --></a>
+                        </li>
                         <li class="social-item">
-                            <a class="social-button" href="#">Фейсбук</a>
-                        </li> <!--скрыть текст-->
+                            <a class="social-button" href="#"aria-label="Сайт Фэйсбук"><!-- иконка --></a>
+                        </li>
                         <li class="social-item">
-                            <a class="social-button" href="#">Инстаграм</a>
-                        </li> <!--скрыть текст-->
+                            <a class="social-button" href="#"aria-label="Сайт Инстаграм"><!-- иконка --></a>
+                        </li>
                     </ul>
                 </div>
                 <p class="mail">
@@ -159,9 +158,32 @@
                 </p>
                 <p class="createdby">
                     Разработано —
-                    <a href="htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </p>
             </div>
         </footer>
+        <section class="modal modal-map">
+            <h3 class="visually-hidden">Как до нас добраться</h3>
+            <img src="img/raster/map-big.png" width="940" height="446" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+        <section class="modal modal-message">
+            <h3 class="visually-hidden">Написать письмо</h3>
+            <form class="message-form" action="#" method="post"> <!--Что в action указать?-->
+                <label>
+                    Ваше имя:<input type="text" name="message-name" placeholder="Имя Фамилия">
+                </label>
+                <label>
+                    Ваш e-mail:<input type="text" name="message-mail" placeholder="email@example.com">
+                </label>
+                <label>
+                    Текст письма:<textarea name="message-body" placeholder="В свободной форме"></textarea>
+                </label>
+                <p class="button-field">
+                   <button class="button" type="submit">Отправить</button> 
+                </p>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
     </body>
 </html>
