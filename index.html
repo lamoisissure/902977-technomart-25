@@ -10,8 +10,9 @@
                 <a class="header-logo">
                     <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <form class="search" action="#" method="post">
-                    <input type="search" name="search" placeholder="Поиск:" aria-label="Поле для поиска">
+                <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="search">Поле для поиска</label>
+                    <input type="search" name="search" id="search" placeholder="Поиск:">
                 </form>
                 <div class="user-navigation">
                     <a class="markers" href="#">Закладки</a>
@@ -145,10 +146,10 @@
                             <a class="social-button" href="#" aria-label="Сайт ВКонтакте"><!-- иконка --></a>
                         </li>
                         <li class="social-item">
-                            <a class="social-button" href="#"aria-label="Сайт Фэйсбук"><!-- иконка --></a>
+                            <a class="social-button" href="#" aria-label="Сайт Фэйсбук"><!-- иконка --></a>
                         </li>
                         <li class="social-item">
-                            <a class="social-button" href="#"aria-label="Сайт Инстаграм"><!-- иконка --></a>
+                            <a class="social-button" href="#" aria-label="Сайт Инстаграм"><!-- иконка --></a>
                         </li>
                     </ul>
                 </div>
@@ -165,25 +166,32 @@
         <section class="modal modal-map">
             <h3 class="visually-hidden">Как до нас добраться</h3>
             <img src="img/raster/map-big.png" width="940" height="446" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button">
+                <span class="visulally-hidden">Закрыть карту</span>
+            </button>
         </section>
         <section class="modal modal-message">
-            <h3 class="visually-hidden">Написать письмо</h3>
-            <form class="message-form" action="#" method="post"> <!--Что в action указать?-->
-                <label>
-                    Ваше имя:<input type="text" name="message-name" placeholder="Имя Фамилия">
-                </label>
-                <label>
-                    Ваш e-mail:<input type="text" name="message-mail" placeholder="email@example.com">
-                </label>
-                <label>
-                    Текст письма:<textarea name="message-body" placeholder="В свободной форме"></textarea>
-                </label>
+            <h3 class="visually-hidden">Форма обратной связи</h3>
+            <form class="message-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="form-element">
+                    <label for="message-name">Ваше имя:</label>
+                    <input type="text" name="message-name" id="message-name" placeholder="Имя Фамилия">
+                </p>
+                <p class="form-element">
+                    <label for="message-mail">Ваш e-mail:</label>
+                    <input type="email" name="message-mail" id="message-mail" placeholder="email@example.com">
+                </p>
+                <p class="form-element">
+                    <label for="message-body">Текст письма:</label>
+                    <textarea name="message-body" id="message-body" placeholder="В свободной форме"></textarea>
+                </p>
                 <p class="button-field">
                    <button class="button" type="submit">Отправить</button> 
                 </p>
             </form>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button">
+                <span class="visulally-hidden">Закрыть форму обратной связи</span>
+            </button>
         </section>
     </body>
 </html>

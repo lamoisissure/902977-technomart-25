@@ -10,8 +10,9 @@
                 <a class="header-logo" href="index.html">
                     <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <form class="search" action="#" method="post">
-                    <input type="search" name="search" placeholder="Поиск:" aria-label="Поле для поиска">
+                <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="search">Поле для поиска</label>
+                    <input type="search" name="search" id="search" placeholder="Поиск:">
                 </form>
                 <div class="user-navigation">
                     <a class="markers" href="#">Закладки</a>
@@ -83,56 +84,42 @@
             <h1 class="page-title">Перфораторы</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form class="filters" action="#" method="get">
-                    <fieldset>
+                <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
+                    <fieldset class="filter-manufacturers">
                         <legend>Производители:</legend>
-                        <ul>
+                        <ul class="manufacturers-list">
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
-                                    Bosch
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                                <label for="bosch">Bosch</label>
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
-                                    Интерскол
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
+                                <label for="interskol">Интерскол</label>
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
-                                    Makita
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
+                                <label for="makita">Makita</label>
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
-                                    Dewalt
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                                <label for="dewalt">Dewalt</label>
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
-                                    Hitachi
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                                <label for="hitachi">Hitachi</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-power-type">
                         <legend>Питание:</legend>
-                        <ul>
+                        <ul class="power-types">
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="cordless" checked>
-                                    Аккумуляторные
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="cordless" id="cordless" checked>
+                                <label for="cordless">Аккумуляторные</label>
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="corded">
-                                    Сетевые
-                                </label>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="corded" id="corded">
+                                <label for="corded">Сетевые</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -165,16 +152,16 @@
                         </a>
                     </li>
                     <li class="catalog-item catalog-item-current catalog-item-new">
+                        <ul class="catalog-item-actions">
+                            <li class="button-buy">
+                                <button class="add-to-basket" type="button">Купить</button>
+                            </li>
+                            <li class="button-marker">
+                                <button class="marked" type="button">В закладки</button>
+                            </li>
+                        </ul>
                         <a  class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-                            <ul class="catalog-item-actions">
-                                <li class="button-buy">
-                                    <button class="add-to-basket" type="button">Купить</button>
-                                </li>
-                                <li class="button-marker">
-                                    <button class="marked" type="button">В закладки</button>
-                                </li>
-                            </ul>
                             <p class="catalog-item-price">
                                 <span>12500 Р.</span>
                             </p>
@@ -306,13 +293,13 @@
                 <div class="social">
                     <ul class="social-list">
                         <li class="social-item">
-                            <a class="social-button" href="#" aria-label="Сайт ВКонтакте"><!-- иконка --></a>
+                            <a class="social-button" href="#" aria-label="Техномарт на сайте ВКонтакте"><!-- иконка --></a>
                         </li>
                         <li class="social-item">
-                            <a class="social-button" href="#"aria-label="Сайт Фэйсбук"><!-- иконка --></a>
+                            <a class="social-button" href="#" aria-label="Техномарт на сайте Фэйсбук"><!-- иконка --></a>
                         </li>
                         <li class="social-item">
-                            <a class="social-button" href="#"aria-label="Сайт Инстаграм"><!-- иконка --></a>
+                            <a class="social-button" href="#" aria-label="Техномарт на сайте Инстаграм"><!-- иконка --></a>
                         </li>
                     </ul>
                 </div>
@@ -332,7 +319,9 @@
                 <a class="button" href="#">Оформить заказ</a>
                 <button class="button button-proceed" type="button">Продолжить покупки</button> 
             </p>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="modal-close" type="button">
+                <span class="visulally-hidden">Закрыть окно</span>
+            </button>
         </section>
     </body>
 </html>
