@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.modal {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-top,
+input[type="search"] {    
+    background-color: #293449;
+}
+
+.header-logo {
+    width: 220px;
+    height: 47px; /* почему логотип не поместился? */
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+}
+
+.header-logo:focus {
+    background-color: #ba2732;
+}
+
+.header-logo:hover {
+    background-color: #ca2c37;
+}
+
+.user-navigation a {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+input[type="search"]:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+input[type="search"]:hover,
+.markers:hover,
+.basket:hover {    
+    background-color: #212a3a;
+}
+
+.markers:focus,
+.basket:focus {    
+    background-color: #161d29;
+}
+
+.user-navigation a:focus {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+.order:hover {
+    background-color: #5fbb2d;
+}
+
+.order:focus {
+    background-color: #518534;
+}
+
+.header-rows {
+    height: 320px;
+    background-color: rgba(242, 246, 248, 0.9);
+}
+
+.site-description {
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.header-contacts-phone {
+    width: 270px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle; /*почему не центрируется?*/
+    border: 2px solid #ffffff;
+}
+
+.header-contacts-link {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+}
+
+.header-contacts p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.authorization {
+    list-style: none;
+}
+
+.authorization li {
+    text-align: center;
+    vertical-align: middle; /* почему не центрируется? */
+    background-color: #ffffff;
+}
+
+.login-link {
+    width: 121px;
+    height: 45px;
+}
+
+.registration {
+    width: 150px;
+    height: 45px;
+}
+
+.authorization a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.authorization a:hover {
+    color: #ee3643;
+}
+
+.authorization a:focus {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.header-nav-list {
+    list-style: none;
+    width: 940px;
+    height: 60px;
+    margin: 0 auto;
+    box-shadow: inset 0 -5px 0 #293449;
+    background-color: #32425c;
+}
+
+.header-nav-list a {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.header-nav-list a:focus {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.header-nav-item:hover {
+    background-color: #293449;
+}
+
+.header-nav-item:focus {
+    background-color: #1d2739;
+}
+
+.index-columns  h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.index-columns  p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.delivery-list {
+    list-style: none;
+}
+
+.delivery-item {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.map {
+    border: none;
+}
+
+.button {
+    display: inline-block;
+    height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ee3643;
+    text-align: center;
+    vertical-align: middle; /*почему не центрируется?*/
+    border: none;
+}
+
+.company .button {
+    width: 220px;
+}
+
+.contacts .button {
+    width: 300px;
+}
+
+.footer-rows {
+    height: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #32425c;
+}
+
+.footer-logo {     /* почему логотип не поместился? */
+    width: 220px;
+    height: 68px;
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+}
+
+.footer-top a {
+    color: #f1f5f7;
+}
+
+.footer-middle a {
+    color: #ffda96;
+}
+
+.footer-nav-list {
+    list-style: none;
+}
+
+.footer-nav-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-item a:focus {
+    opacity: 0.5;
+}
+
+.footer-contacts a,
+.footer-contacts address {
+    color: #f3f7f9;
+    font-style: normal;
+}
+
+.footer-bottom {
+    height: 107px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-item {
+    background-color: #212a3a;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: #ee3643;
+}
+
+.mail a, 
+.createdby a {
+    color: #ffd180;
+}
+
+.mail a:hover, 
+.createdby a:hover {
+    text-decoration: underline;
+}
+
+.mail a:focus, 
+.createdby a:focus {
+    color: #ee3643;;
+}
+
+.header-contacts-inner a {
+    color: #e9292a;
+}
+
+.user-menu {
+    list-style: none;
+}
+
+.user-name {
+    width: 299px;
+    height: 45px;
+}
+
+.user-name a:hover {
+    color: #000000;
+}
+
+.user-menu a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.user-menu a:hover {
+    color: #ee3643;
+}
+
+.user-menu a:focus {
+    color: #32425c;
+    opacity: 0.3;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.page-title {
+    color: #32425c;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #f2f6f8;
+    background-size: 940px 89px;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filters legend {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.filter-input:disabled + label {
+    opacity: 0.4;
+}
+
+.filter-button {
+    width: 140px;
+    height: 38px;
+    color: #000000;
+    font-size: 13px;
+    line-height: 18px;    
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    font-family: "PT Sans", Arial, sans-serif;
+    width: 220px;
+    height: 318px;
+    font-weight: 700;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item h3 {    
+    font-size: 18px;    
+    line-height: 20px;
+}
+
+.catalog-item-price del,
+.catalog-item-price span{
+    font-size: 17px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.catalog-item-price span {
+    color: #ffffff;
+    text-transform: uppercase;    
+    background-color: #ee3643;
+}
+
+.catalog-item-actions button {
+    width: 135px;
+    height: 38px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.add-to-basket {    
+    color: #ffffff;    
+    box-shadow: inset 0 -3px 0 #367315;
+    background-color: #63a63e;
+    border: none;
+}
+
+.add-to-basket:hover {
+    background-color: #5fbb2d;
+}
+
+.add-to-basket:focus {
+    background-color: #518534;
+    box-shadow: none;
+}
+
+.marked {
+    color: #32425c;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+}
+
+.marked:hover {
+    border: 3px solid #32425c;
+}
+
+.marked:focus {
+    opacity: 0.3;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item {
+    width: 38px;
+    height: 38px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.pagination-item a {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.pagination-item a:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:focus {
+    border: 1px solid #ee3643;
+}
+
+.pagination-item-current a {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.pagination-item-next {
+    width: 140px;
+}

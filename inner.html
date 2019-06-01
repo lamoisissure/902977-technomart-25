@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Интернет-магазин «Техномарт»</title>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -20,56 +23,62 @@
                     <a class="order" href="#">Оформить заказ</a>
                 </div>
             </div>
-            <div class="header-middle">
-                <p class="site-description">
+            <div class="header-rows">
+                <div class="header-middle">
+                    <p class="site-description">
                     Интернет-магазин строительных материалов и инструментов для ремонта
-                </p>
-                <div class="header-contacts">
-                    <a class="header-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
-                    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                </div>
-                <ul class="user-menu">
-                    <li class="user-name">
-                        <a href="#">Равшан Джамшутович</a>
-                    </li>
-                    <li class="user-exit">
-                        <a class="profile-exit" href="#" aria-label="Выход">
+                    </p>
+                    <div class="header-contacts">
+                        <div class="header-contacts-phone header-contacts-inner">
+                            <a class="header-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
+                        </div>
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    </div>
+                    <ul class="authorization authorization-inner">
+                        <li class="user-name">
+                            <a href="#">Равшан Джамшутович</a>
+                        </li>
+                    </ul>
+                    <ul class="user-menu">
+                        <li class="user-exit">
+                            <a class="profile-exit" href="#" aria-label="Выход">
                             <!-- иконка -->
-                        </a>
-                    </li>
-                    <li class="user-orders">
-                        <a href="#">Мои заказы</a>
-                    </li>
-                    <li class="user-profile">
-                        <a href="#">Личный кабинет</a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                        <li class="user-orders">
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li class="user-profile">
+                            <a href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header-bottom">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Компания</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header-bottom">
-                <ul class="header-nav-list">
-                    <li class="header-nav-item">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Компания</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Новости</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Спецпредложения</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Доставка</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
         <main class="container">
             <ul class="breadcrumbs">
@@ -79,15 +88,17 @@
                 <li class="breadcrumbs-item">
                     <a href="#">Инструмент</a>
                 </li>
-                <li class="breadcrumbs-current">Перфораторы</li>
+                <li class="breadcrumbs-current">
+                    <a>Перфораторы</a>
+                </li>
             </ul>
             <h1 class="page-title">Перфораторы</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
+                <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="filter-manufacturers">
                         <legend>Производители:</legend>
-                        <ul class="manufacturers-list">
+                        <ul class="manufacturers-list filter-list">
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
                                 <label for="bosch">Bosch</label>
@@ -112,13 +123,13 @@
                     </fieldset>
                     <fieldset class="filter-power-type">
                         <legend>Питание:</legend>
-                        <ul class="power-types">
+                        <ul class="power-types filter-list">
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="cordless" id="cordless" checked>
                                 <label for="cordless">Аккумуляторные</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="corded" id="corded">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-type" value="corded" id="corded" disabled>
                                 <label for="corded">Сетевые</label>
                             </li>
                         </ul>
@@ -152,17 +163,17 @@
                         </a>
                     </li>
                     <li class="catalog-item catalog-item-current catalog-item-new">
-                        <ul class="catalog-item-actions">
-                            <li class="button-buy">
-                                <button class="add-to-basket" type="button">Купить</button>
-                            </li>
-                            <li class="button-marker">
-                                <button class="marked" type="button">В закладки</button>
-                            </li>
-                        </ul>
                         <a  class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-                            <p class="catalog-item-price">
+                            <ul class="catalog-item-actions">
+                                <li class="button-buy">
+                                    <button class="add-to-basket" type="button">Купить</button>
+                                </li>
+                                <li class="button-marker">
+                                    <button class="marked" type="button">В закладки</button>
+                                </li>
+                            </ul>                            
+                            <p class="catalog-item-price">   
                                 <span>12500 Р.</span>
                             </p>
                         </a>
@@ -236,54 +247,56 @@
                     <li class="pagination-item">
                         <a href="#">3</a>
                     </li>
-                    <li class="pagination-item">
+                    <li class="pagination-item pagination-item pagination-item-next">
                         <a href="#">Следующая</a>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="main-footer">
-            <div class=footer-top>
-                <a class="footer-logo" href="index.html">
-                    <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
-                </a>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-item">
-                        <a href="#">Компания</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Новости</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Доставка</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <div class="footer-contacts">
-                    <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                    <a class="footer-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
+            <div class="footer-rows">
+                <div class="footer-top">
+                    <a class="footer-logo" href="index.html">
+                        <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
+                    </a>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a href="#">Компания</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="footer-nav-list">
-                    <li class="footer-nav-item">
-                        <a href="#">Материалы</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Техника</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Инструмент</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="#">Спецпредложения</a>
-                    </li>
-                </ul>
+                <div class="footer-middle">
+                    <div class="footer-contacts">
+                        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                        <a class="footer-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
+                    </div>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a href="#">Материалы</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Техника</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Инструмент</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyright">
