@@ -7,6 +7,11 @@ body {
     background-color: #ffffff;
 }
 
+/*
+.container > * {outline: 1px dashed magenta;}
+.container > * > * {outline: 1px solid yellow;}
+*/
+
 .modal {
     display: none;
 }
@@ -15,14 +20,33 @@ a {
     text-decoration: none;
 }
 
-.header-top,
-input[type="search"] {    
+.main-header {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(242, 246, 248, 0.9);
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-top-wrapper {
+    width: auto;
+    margin-bottom: 46px;
+    color: #000000;
     background-color: #293449;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
     width: 220px;
-    height: 47px; /* почему логотип не поместился? */
+    height: 47px;
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
 }
@@ -35,18 +59,17 @@ input[type="search"] {
     background-color: #ca2c37;
 }
 
-.user-navigation a {
-    font-size: 17px;
-    line-height: 18px;
-    color: #ffffff;
+.input-search {
+    color: #000000;
+    background-color: #293449;
 }
 
-input[type="search"]:focus {
+.input-search:focus {
     color: #000000;
     background-color: #ffffff;
 }
 
-input[type="search"]:hover,
+.input-search:hover,
 .markers:hover,
 .basket:hover {    
     background-color: #212a3a;
@@ -55,11 +78,6 @@ input[type="search"]:hover,
 .markers:focus,
 .basket:focus {    
     background-color: #161d29;
-}
-
-.user-navigation a:focus {
-    color: #ffffff;
-    opacity: 0.5;
 }
 
 .order {
@@ -74,12 +92,29 @@ input[type="search"]:hover,
     background-color: #518534;
 }
 
-.header-rows {
-    height: 320px;
-    background-color: rgba(242, 246, 248, 0.9);
+.user-navigation {
+    margin-left: auto;    
+}
+
+.user-navigation a {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.user-navigation a:focus {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-description {
+    width: 300px;
     font-size: 16px;
     line-height: 23px;
     color: #ee3643;
@@ -87,11 +122,13 @@ input[type="search"]:hover,
     font-weight: 400;
 }
 
+.header-contacts {
+    width: 300px;
+}
+
 .header-contacts-phone {
     width: 270px;
-    height: 45px;
     text-align: center;
-    vertical-align: middle; /*почему не центрируется?*/
     border: 2px solid #ffffff;
 }
 
@@ -108,23 +145,26 @@ input[type="search"]:hover,
 }
 
 .authorization {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
+    width: 300px;
+    margin: 0;
+    padding: 0;
 }
 
 .authorization li {
     text-align: center;
-    vertical-align: middle; /* почему не центрируется? */
     background-color: #ffffff;
 }
 
 .login-link {
     width: 121px;
-    height: 45px;
 }
 
 .registration {
     width: 150px;
-    height: 45px;
 }
 
 .authorization a {
@@ -145,9 +185,9 @@ input[type="search"]:hover,
 
 .header-nav-list {
     list-style: none;
-    width: 940px;
-    height: 60px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: inset 0 -5px 0 #293449;
     background-color: #32425c;
 }
@@ -169,6 +209,11 @@ input[type="search"]:hover,
 
 .header-nav-item:focus {
     background-color: #1d2739;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .index-columns  h2 {
@@ -198,14 +243,12 @@ input[type="search"]:hover,
 
 .button {
     display: inline-block;
-    height: 38px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
     text-align: center;
-    vertical-align: middle; /*почему не центрируется?*/
     border: none;
 }
 
@@ -217,14 +260,29 @@ input[type="search"]:hover,
     width: 300px;
 }
 
-.footer-rows {
-    height: 300px;
+.main-footer {
+    margin-top: 86px;
     font-size: 18px;
     line-height: 24px;
     background-color: #32425c;
 }
 
-.footer-logo {     /* почему логотип не поместился? */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px;
+}
+
+.footer-left {
+    width: 380px;
+}
+
+.footer-right {
+    width: 550px;
+}
+
+.footer-logo {
     width: 220px;
     height: 68px;
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
@@ -232,15 +290,24 @@ input[type="search"]:hover,
 }
 
 .footer-top a {
+    display: block;
     color: #f1f5f7;
 }
 
+/*        желтая навигация в футере
 .footer-middle a {
     color: #ffda96;
 }
+*/
 
 .footer-nav-list {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-nav-item {
+    padding-left: 60px;
 }
 
 .footer-nav-item a:hover {
@@ -258,11 +325,21 @@ input[type="search"]:hover,
 }
 
 .footer-bottom {
-    height: 107px;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     background-color: #293449;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright,
+.social,
+.footer-wrapper {
+    width: 300px;
 }
 
 .social-list {
@@ -276,6 +353,12 @@ input[type="search"]:hover,
 .social-item:hover,
 .social-item:focus {
     background-color: #ee3643;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-end; 
 }
 
 .mail a, 
@@ -293,6 +376,9 @@ input[type="search"]:hover,
     color: #ee3643;;
 }
 
+
+/*для внутренней*/
+
 .header-contacts-inner a {
     color: #e9292a;
 }
@@ -303,11 +389,14 @@ input[type="search"]:hover,
 
 .user-name {
     width: 299px;
-    height: 45px;
 }
 
 .user-name a:hover {
     color: #000000;
+}
+
+.user-menu {
+    display: flex;
 }
 
 .user-menu a {
@@ -327,10 +416,13 @@ input[type="search"]:hover,
 }
 
 .breadcrumbs {
+    display: flex;
     list-style: none;
+    margin-bottom: 25px;    
 }
 
 .breadcrumbs a {
+    padding: 40px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -338,13 +430,18 @@ input[type="search"]:hover,
     text-transform: uppercase;
 }
 
-.page-title {
+.inner-page-title {
     color: #32425c;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     background-color: #f2f6f8;
-    background-size: 940px 89px;
+    margin-bottom: 20px;
+}
+
+.inner-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .filter-list {
@@ -352,10 +449,11 @@ input[type="search"]:hover,
 }
 
 .filters fieldset {
-  border: none;
+    border: none;
 }
 
 .filters {
+    width: 220px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -384,14 +482,24 @@ input[type="search"]:hover,
     background-color: #ffffff;
 }
 
+.catalog {
+    width: 700px;
+}
+
 .catalog-list {
+    margin: 0;
+    margin-bottom: 52px;
+    padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .catalog-item {
-    font-family: "PT Sans", Arial, sans-serif;
     width: 220px;
-    height: 318px;
+    margin-bottom: 20px;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
@@ -433,6 +541,20 @@ input[type="search"]:hover,
     text-transform: uppercase;
 }
 
+.catalog-item-actions {
+    display: none;
+    list-style: none;
+    height: 170px; /* решить высоту, чтобы не прыгало */
+}
+
+.catalog-item:hover .catalog-item-actions {
+    display: block;
+}
+
+.catalog-item:hover img {
+    display: none;
+}
+
 .add-to-basket {    
     color: #ffffff;    
     box-shadow: inset 0 -3px 0 #367315;
@@ -465,11 +587,13 @@ input[type="search"]:hover,
 
 .pagination-list {
     list-style: none;
+    display: flex;
+    margin-bottom: 60px;
 }
 
 .pagination-item {
     width: 38px;
-    height: 38px;
+    margin-right: 10px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -477,6 +601,7 @@ input[type="search"]:hover,
 }
 
 .pagination-item a {
+    display: block;
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
 }
