@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Интернет-магазин «Техномарт»</title>
-        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> <!-- Error Bad value ... for attribute href on element link: Illegal character in query: | is not allowed.-->
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -26,8 +26,9 @@
                 </div>
             </div>
             <div class="header-middle container">
-                <h1 class="site-description">
-                Интернет-магазин строительных материалов и инструментов для ремонта
+                <h1 class="site-description">Интернет-магазин
+                    строительных материалов
+                    <br>и инструментов для ремонта
                 </h1>
                 <div class="header-contacts">
                     <div class="header-contacts-phone">
@@ -53,7 +54,7 @@
                             <a href="#">Компания</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#">Каталог</a>
+                            <a href="inner.html">Каталог</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="#">Новости</a>
@@ -94,10 +95,10 @@
                     Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                     </p>
-                    <button class="map" type="button">
+                    <a class="map" href="#">
                         <img src="img/raster/map.png" width="300" height="158" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
-                    </button>
-                    <button class="button" type="button">Заблудились? Напишите нам!</button>
+                    </a>
+                    <a class="button" href="#">Заблудились? Напишите нам!</a>
                 </section>
             </div>
         </main>
@@ -121,7 +122,7 @@
                             <a href="#">Новости</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#">Каталог</a>
+                            <a href="inner.html">Каталог</a>
                         </li>
                         <li class="footer-nav-item">
                             <a href="#">Доставка</a>

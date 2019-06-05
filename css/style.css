@@ -92,6 +92,8 @@ a {
     background-color: #518534;
 }
 
+.header-middle > * {outline: 1px dashed red;}
+
 .user-navigation {
     margin-left: auto;    
 }
@@ -114,7 +116,9 @@ a {
 }
 
 .site-description {
-    width: 300px;
+    margin-right: auto;
+    padding-left: 52px;
+    width: 200px;
     font-size: 16px;
     line-height: 23px;
     color: #ee3643;
@@ -124,6 +128,7 @@ a {
 
 .header-contacts {
     width: 300px;
+    margin-left: 20px;
 }
 
 .header-contacts-phone {
@@ -150,7 +155,7 @@ a {
     align-items: center;
     list-style: none;
     width: 300px;
-    margin: 0;
+    margin-left: 20px;
     padding: 0;
 }
 
@@ -186,7 +191,7 @@ a {
 .header-nav-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: inset 0 -5px 0 #293449;
     background-color: #32425c;
@@ -318,10 +323,13 @@ a {
     opacity: 0.5;
 }
 
-.footer-contacts a,
-.footer-contacts address {
+.footer-contacts  {
     color: #f3f7f9;
     font-style: normal;
+}
+
+.footer-contacts a {
+    display: inline-block;
 }
 
 .footer-bottom {
@@ -544,7 +552,6 @@ a {
 .catalog-item-actions {
     display: none;
     list-style: none;
-    height: 170px; /* решить высоту, чтобы не прыгало */
 }
 
 .catalog-item:hover .catalog-item-actions {
