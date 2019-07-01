@@ -12,9 +12,12 @@
             <div class="header-top-wrapper">
                 <div class="header-top container">
                     <a class="header-logo">
-                        <img src="img/vector/logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+                        <img src="img/raster/logo-header.png" width="110" height="19" alt="Логотип интернет-магазина «Техномарт»">
                     </a>
                     <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                        </span>
                         <label class="visually-hidden" for="search">Поле для поиска</label>
                         <input class="input-search" type="search" name="search" id="search" placeholder="Поиск:">
                     </form>
@@ -69,8 +72,8 @@
                     </ul>
                 </nav>
         </header>
-        <main class="container">
-            <section class="promo-block">
+        <main class="index-main">
+            <section class="promo-block container">
                 <h2 class="visually-hidden">Промо-блок</h2>
                 <div class="promo-catalog">
                     <div class="promo-item promo-catalog-item promo-materials flag-new">
@@ -95,6 +98,10 @@
                         <label for="slider-2">Второй</label>
                     </div>
 -->
+                    <span class="slider-switch">
+                        <button class="switch-left" type="button"></button>
+                        <button class="switch-right" type="button"></button>
+                    </span>
                     <ul class="promo-slider">
                         <li class="slider-1">
                             <h3 class="slider-title">Дрели</h3>
@@ -107,6 +114,7 @@
                             <a class="button slider-button" href="inner.html">Открыть каталог</a>
                         </li>
                     </ul>
+                    
                     <div class="promo-wrapper">
                         <div class="promo-item promo-offers-item promo-discount">
                             <span>Скидки 50%</span>
@@ -119,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <section class="popular-goods">
+            <section class="popular-goods container">
                 <div class="popular-wrapper">
                     <h2 class="index-subtitle popular-title">Популярные товары:</h2>
                     <a class="button popular-button" href="#">Все популярные товары</a>
@@ -153,13 +161,12 @@
                         <a class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
                             <img src="img/raster/goods/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                            <del class="product-price-old undiscounted">12500 Р.</del>
                             <span class="button product-price">12500 Р.</span>
                         </a>
                     </li>
                 </ul>
             </section>
-            <section class="popular-brands">
+            <section class="popular-brands container">
                 <div class="popular-wrapper">
                     <h2 class="index-subtitle popular-title">Популярные производители:</h2>
                     <a class="button popular-button" href="#">Все производители</a>
@@ -209,14 +216,46 @@
             </section>
             
             <section class="services">
-                <h2 class="index-subtitle services-title">Сервисы</h2>
+                <div class="container">
+                    <h2 class="index-subtitle services-title">Сервисы</h2>
+                    <p class="services-intro">Хороший интернет-магазин отличается от плохого не только ценами!
+                        <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+                    </p>
+                    <div class="services-wrapper">
+                        <ul class="services-list">
+                            <li class="services-item">
+                                <button class="services-button services-button-delivery services-button-current" type="button">Доставка</button>
+                                
+                            </li>
+                            <li class="services-item">
+                                <button class="services-button services-button-guarantee" type="button">Гарантия</button>
+                            </li>
+                            <li class="services-item">
+                                <button class="services-button services-button-credit" type="button">Кредит</button>
+                            </li>
+                        </ul>
+                        <ul class="services-info">
+                            <li class="services-info-delivery services-info-current">
+                                <h3 class="services-subtitle">Доставка</h3>
+                                <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                                Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+                            </li>
+                            <li class="services-info-guarantee">
+                                <h3 class="services-subtitle">Гарантия</h3>
+                                <p class="services-text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+                            </li>
+                            <li class="services-info-credit">
+                                <h3 class="services-subtitle">Кредит</h3>
+                                <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                                <a class="button credit-button" href="#">Отправить заявку</a>
+                            </li>
+                        </ul>      
+                    </div>
+                </div>
             </section>
-            
-            
-            
-            <div class="index-columns">
+            <div class="index-columns container">
                 <section class="company">
-                    <h2 class="index-subtitle company-title">Компания «Техномарт»</h2>
+                    <h2 class="index-subtitle">Компания «Техномарт»</h2>
                     <p class="company-intro">
                     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
                     </p>
@@ -232,15 +271,15 @@
                     <a class="button" href="#">Подробнее о компании</a>
                 </section>
                 <section class="contacts">
-                    <h2 class="index-subtitle contacts-title">Контакты</h2>
+                    <h2 class="index-subtitle">Контакты</h2>
                     <p class="contacts-intro">
                     Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                     </p>
-                    <a class="map" href="#">
-                        <img src="img/raster/map.png" width="300" height="158" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
+                    <a class="map" href="https://www.google.com/maps"> <!--это правильная ссылка? по ТЗ нужно: "Достаточная реализация — обычное изображение, клик по ней приводит к переходу на сервис карт"-->
+                        <img src="img/raster/map.png" width="300" height="158" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
                     </a>
-                    <a class="button" href="#">Заблудились? Напишите нам!</a>
+                    <a class="button feedback" href="#">Заблудились? Напишите нам!</a>
                 </section>
             </div>
         </main>
@@ -248,11 +287,11 @@
             <div class="footer-top container">
                 <div class="footer-left">
                     <a class="footer-logo">
-                        <img src="img/vector/logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
+                        <img src="img/raster/logo-footer.png" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
                     </a>
                     <div class="footer-contacts">
                         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                        <a class="footer-contacts-link" href="tel:+78125550555">+7 (812) 555‒05‒55</a>
+                        <a class="footer-contacts-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </div>
                 </div>
                 <div class="footer-right">
@@ -298,18 +337,18 @@
                     <div class="social">
                         <ul class="social-list">
                             <li class="social-item">
-                                <a class="social-button" href="#" aria-label="Техномарт на сайте ВКонтакте">
-                                    <img src="img/vector/social/vk-icon.svg" width="26" height="15">
+                                <a class="social-button" href="#">
+                                    <img src="img/vector/social/vk-icon.svg" width="26" height="15" alt="Техномарт на сайте ВКонтакте">
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-button" href="#" aria-label="Техномарт на сайте Фэйсбук">
-                                    <img src="img/vector/social/fb-icon.svg" width="12" height="22">
+                                <a class="social-button" href="#">
+                                    <img src="img/vector/social/fb-icon.svg" width="12" height="22" alt="Техномарт на сайте Фэйсбук">
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-button" href="#" aria-label="Техномарт на сайте Инстаграм">
-                                    <img src="img/vector/social/insta-icon.svg" width="21" height="21">
+                                <a class="social-button" href="#">
+                                    <img src="img/vector/social/insta-icon.svg" width="21" height="21" alt="Техномарт на сайте Инстаграм">
                                 </a>
                             </li>
                         </ul>
@@ -329,33 +368,37 @@
         </footer>
         <section class="modal modal-map">
             <h3 class="visually-hidden">Как до нас добраться</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1561844789422!5m2!1sru!2sru" width="940" height="446" style="border:0" allowfullscreen></iframe>
             <img src="img/raster/map-big.png" width="940" height="446" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19">
             <button class="modal-close" type="button">
-                <span class="visulally-hidden">Закрыть карту</span>
+                <span class="visually-hidden">Закрыть карту</span>
             </button>
         </section>
-        <section class="modal modal-message">
+        <section class="modal modal-feedback">
             <h3 class="visually-hidden">Форма обратной связи</h3>
-            <form class="message-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="form-element">
-                    <label for="message-name">Ваше имя:</label>
-                    <input type="text" name="message-name" id="message-name" placeholder="Имя Фамилия">
-                </p>
-                <p class="form-element">
-                    <label for="message-mail">Ваш e-mail:</label>
-                    <input type="email" name="message-mail" id="message-mail" placeholder="email@example.com">
-                </p>
-                <p class="form-element">
-                    <label for="message-body">Текст письма:</label>
-                    <textarea name="message-body" id="message-body" placeholder="В свободной форме"></textarea>
-                </p>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form-wrapper">
+                    <p class="form-element">
+                        <label for="feedback-name">Ваше имя:</label>
+                        <input class="feedback-name" type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="form-element">
+                        <label for="feedback-mail">Ваш e-mail:</label>
+                        <input class="feedback-mail" type="email" name="feedback-mail" id="feedback-mail" placeholder="email@example.com">
+                    </p>
+                    <p class="form-element">
+                        <label for="feedback-body">Текст письма:</label>
+                        <textarea class="feedback-body" name="feedback-body" id="feedback-body" placeholder="В свободной форме"></textarea>
+                    </p>
+                </div>
                 <p class="button-field">
                    <button class="button" type="submit">Отправить</button> 
                 </p>
             </form>
             <button class="modal-close" type="button">
-                <span class="visulally-hidden">Закрыть форму обратной связи</span>
+                <span class="visually-hidden">Закрыть форму обратной связи</span>
             </button>
         </section>
+        <script src="js/script.js"></script>
     </body>
 </html>
