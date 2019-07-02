@@ -15,11 +15,9 @@
                         <img src="img/raster/logo-header.png" width="110" height="19" alt="Логотип интернет-магазина «Техномарт»">
                     </a>
                     <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-                        </span>
                         <label class="visually-hidden" for="search">Поле для поиска</label>
                         <input class="input-search" type="search" name="search" id="search" placeholder="Поиск:">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                     </form>
                     <div class="user-navigation">
                         <a class="markers" href="#">Закладки: 0</a>
@@ -90,17 +88,16 @@
                     </div>
                 </div>
                 <div class="promo-offers">
-<!--
-                    <input class="visually-hidden" type="radio" id="slider-1" name="toggle" checked>
-                    <input class="visually-hidden" type="radio" id="slider-2" name="toggle">
-                    <div class="slider-controls">
-                        <label for="slider-1">Первый</label>
-                        <label for="slider-2">Второй</label>
-                    </div>
--->
                     <span class="slider-switch">
                         <button class="switch-left" type="button"></button>
                         <button class="switch-right" type="button"></button>
+                    </span>
+                    
+                    <input class="visually-hidden slider-1-toggle" type="radio" id="slider-1" name="toggle" checked>
+                    <input class="visually-hidden slider-2-toggle" type="radio" id="slider-2" name="toggle">
+                    <span class="slider-controls">
+                        <label for="slider-1">Первый</label>
+                        <label for="slider-2">Второй</label>
                     </span>
                     <ul class="promo-slider">
                         <li class="slider-1">
@@ -133,36 +130,68 @@
                     <a class="button popular-button" href="#">Все популярные товары</a>
                 </div>
                 <ul class="catalog-list">
-                    <li class="popular-goods-item">
+                    <li class="popular-goods-item catalog-item">
                         <a class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
                             <img src="img/raster/goods/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                             <del class="product-price-old">32500 Р.</del>
                             <span class="button product-price">25500 Р.</span>
                         </a>
+                        <ul class="catalog-item-actions">
+                            <li class="button-buy">
+                                <a class="add-to-basket" href="#">Купить</a>
+                            </li>
+                            <li class="button-marker">
+                                <button class="marked" type="button">В закладки</button>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="popular-goods-item">
+                    <li class="popular-goods-item catalog-item">
                         <a class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
                             <img src="img/raster/goods/bfg-3000.jpg" width="218" height="170"  alt="Перфоратор BOSCH BFG 3000">
                             <del class="product-price-old">22500 Р.</del>
                             <span class="button product-price">15500 Р.</span>
                         </a>
+                        <ul class="catalog-item-actions">
+                            <li class="button-buy">
+                                <a class="add-to-basket" href="#">Купить</a>
+                            </li>
+                            <li class="button-marker">
+                                <button class="marked" type="button">В закладки</button>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="popular-goods-item">
+                    <li class="popular-goods-item catalog-item">
                         <a class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
                             <img src="img/raster/goods/bfg-6000.jpg" width="218" height="170"  alt="Перфоратор BOSCH BFG 6000">
                             <del class="product-price-old">30500 Р.</del>
                             <span class="button product-price">25500 Р.</span>
                         </a>
+                        <ul class="catalog-item-actions">
+                            <li class="button-buy">
+                                <a class="add-to-basket" href="#">Купить</a>
+                            </li>
+                            <li class="button-marker">
+                                <button class="marked" type="button">В закладки</button>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="popular-goods-item flag-new">
+                    <li class="popular-goods-item catalog-item flag-new">
                         <a class="catalog-item-info" href="#">
                             <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
                             <img src="img/raster/goods/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <span class="button product-price">12500 Р.</span>
                         </a>
+                        <ul class="catalog-item-actions">
+                            <li class="button-buy">
+                                <a class="add-to-basket" href="#">Купить</a>
+                            </li>
+                            <li class="button-marker">
+                                <button class="marked" type="button">В закладки</button>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -276,7 +305,7 @@
                     Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                     </p>
-                    <a class="map" href="https://www.google.com/maps"> <!--это правильная ссылка? по ТЗ нужно: "Достаточная реализация — обычное изображение, клик по ней приводит к переходу на сервис карт"-->
+                    <a class="map" href="#">
                         <img src="img/raster/map.png" width="300" height="158" alt="Офис интернет-магазина по адресу: г. Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
                     </a>
                     <a class="button feedback" href="#">Заблудились? Напишите нам!</a>
