@@ -1,6 +1,7 @@
 var linkAdded = document.querySelectorAll('.add-to-basket');
 var popupAdded = document.querySelector('.modal-added');
 var closeAdded = popupAdded.querySelector('.modal-close');
+var proceedAdded = popupAdded.querySelector('.button-proceed');
 
 for (var i = 0; i < linkAdded.length; i++) {
     linkAdded[i].addEventListener('click', function (evt) {
@@ -21,4 +22,9 @@ window.addEventListener("keydown", function (evt) {
             popupAdded.classList.remove("modal-show");
         }
     }
+});
+
+proceedAdded.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popupAdded.classList.remove('modal-show');
 });
